@@ -1,0 +1,229 @@
+body {
+  background-color: #f6f6f6;
+  margin-top: 30px;
+}
+.inbox__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 20px 20px;
+  background-color: darkgray;
+  margin-bottom: 30px;
+}
+.Search__filter-wrapper {
+  display: flex;
+  position: relative;
+}
+.Search__filter-wrapper input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  border-right: none;
+}
+.form__details {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  background-color: aqua;
+}
+.form__details ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.Filter__button {
+  padding: 10px 20px;
+  outline: none;
+  background-color: #f6f6f6;
+  border: 1px solid #dfdfdf;
+  position: relative;
+  cursor: pointer;
+}
+.Filter__button .Filter__button--tooltiptext {
+  font-size: 10px;
+  visibility: hidden;
+  width: 120px;
+  background-color: lightpink;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -60px;
+}
+.Filter__button--tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightpink transparent transparent transparent;
+}
+.Filter__button:hover .Filter__button--tooltiptext {
+  visibility: visible;
+}
+.Filter__button:active .Filter__button--tooltiptext,
+.Filter__button:focus .Filter__button--tooltiptext {
+  visibility: hidden;
+}
+.tip--setting {
+  position: relative;
+}
+.tip--setting .setting--tooltiptext {
+  font-size: 10px;
+  visibility: hidden;
+  width: 120px;
+  background-color: lightpink;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -60px;
+}
+.setting--tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightpink transparent transparent transparent;
+}
+.tip--setting:hover .setting--tooltiptext {
+  visibility: visible;
+}
+.tip--setting:active .setting--tooltiptext,
+.tip--setting:focus .setting--tooltiptext {
+  visibility: hidden;
+}
+.clear__search {
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  text-decoration: none;
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+}
+.clear__search .clear__search--tooltiptext {
+  font-size: 10px;
+  visibility: hidden;
+  width: 100px;
+  background-color: lightpink;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  left: 70%;
+  margin-left: -60px;
+}
+.clear__search--tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightpink transparent transparent transparent;
+}
+.clear__search:hover .clear__search--tooltiptext {
+  visibility: visible;
+}
+.clear__search:active .clear__search--tooltiptext,
+.clear__search:focus .clear__search--tooltiptext {
+  visibility: hidden;
+}
+
+.Search__detail-wrapper {
+  width: 100%;
+  padding: 20px 40px 20px 10px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  box-shadow: 30px #fff;
+}
+.Search__detail-wrapper label {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.Search__detail-wrapper label > span {
+  display: inline-block;
+  font-weight: bold;
+  width: 30%;
+}
+.Search__detail-wrapper label > input,
+.Search__detail-wrapper label > select {
+  width: 69%;
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+  outline: none;
+}
+.Search__detail-wrapper label > input:focus,
+.Search__detail-wrapper label > select:focus {
+  outline: none;
+}
+.Search__detail-wrapper .date--selector > input {
+  display: inline-block;
+  width: 33%;
+}
+.input-field__start-date {
+  margin-right: 32px;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: black;
+  background-color: darkgoldenrod;
+}
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+.Buyer__detail select {
+  -webkit-appearance: none;
+}
+.Buyer__detail select option {
+  padding: 10px;
+}
+.drop__down {
+  position: relative;
+}
+.tags__wrapper {
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  left: -50px;
+}
+.tags__wrapper a {
+  width: 150px;
+  font-size: 14px;
+  display: block;
+  padding: 5px 20px;
+}
+.tags__wrapper a:nth-child(2) {
+  border-bottom: 1px solid #dfdfdf;
+}

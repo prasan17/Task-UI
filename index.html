@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Stylesheet/style.css">
+    <link rel="icon" href="./Assets/Image/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <title>Task</title>
+</head>
+
+<body class="container">
+    <header>
+        <div class="inbox__container">
+            <span>Inbox</span>
+            <div class="drop__down">
+                <a href="#" class="tip--setting" id="tip--setting"><img src="./Assets/Image/tip.png" alt="Tip" />
+                    <span class="setting--tooltiptext">Settings</span>
+                </a>
+                <div class="tags__wrapper" id="tags__wrapper" style="display:none;">
+                    <a>Create Tags</a>
+                    <a>Manage Tags</a>
+                    <a>Send Feedback</a>
+                    <a>Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="Search__filter-wrapper">
+                <input type="text" placeholder="Search Name,Product Type,Project Tag, etc.">
+                <div id="form__details" class="form__details">
+                </div>
+                <a class="clear__search" id="clear__search" style="display:none;">X
+                    <span class="clear__search--tooltiptext">Clear Search</span>
+                </a>
+                <a class="Filter__button" id="Filter__button">Filter
+                    <span class="Filter__button--tooltiptext">Show Advance Filter</span>
+                </a>
+            </div>
+            <div class="Search__detail-wrapper" id="Search__detail-wrapper" style="display:none;">
+                <form id="detail__form">
+                    <label for="field1" class="Buyer__detail"><span>Buyer Name</span><select name="field4"
+                            class="select-field" id="buyer__name">
+                            <option value="Nitesh Thandani">Nitesh Thandani</option>
+                            <option value="Neha Ravi">Neha Ravi</option>
+                            <option value="Neha Srinath">Neha Srinath</option>
+                        </select></label>
+                    <label for="field2"><span>Seller Name</span><input type="text" class="input-field" name="field2"
+                            value="" /></label>
+                    <label for="field3"><span>Product Name</span><input type="text" class="input-field" name="field2"
+                            value="" /></label>
+                    <label for="field4"><span>Quote Number</span><input type="text" class="input-field" name="field2"
+                            value="" /></label>
+                    <label for="field5"><span>Includes Words</span><input type="text" class="input-field" name="field2"
+                            value="" /></label>
+                    <label for="field6"><span>Enquiry State</span>
+                        <select name="field4" class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Select State</option>
+                            <option value="1">Awaiting quote</option>
+                            <option value="2">Awaiting quote acceptance</option>
+                            <option value="3">Closed</option>
+                        </select></label>
+                    <label for="field8" class="date--selector"><span>Enquiries Created Between</span>
+                        <input type="date" class="input-field__start-date" name="field2" placeholder="Start Date"
+                            value="" /><input type="date" class="input-field" name="field2" placeholder="End Date"
+                            value="" /></label>
+                    <label for="field7"><span>Project Tags</span><select name="field4" class="custom-select"
+                            id="inlineFormCustomproject">
+                            <option selected value="new enquiry 0">new enquiry 0</option>
+                            <option value="new enquiry 1">new enquiry 1</option>
+                            <option value="new enquiry 2">new enquiry 2</option>
+                            <option value="new enquiry 3">new enquiry 3</option>
+                        </select></label>
+
+                    <label for="field9"><span>Display Message</span><select name="field4" class="custom-select"
+                            id="inlineFormCustomSelect">
+                            <option selected>All</option>
+                        </select></label>
+                    <div class="submit"><input type="submit" value="Search" /></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
